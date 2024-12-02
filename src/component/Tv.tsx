@@ -34,15 +34,17 @@ const Tv = () => {
   const { tv } = useGetTv();
 
   return (
-    <section className=" md:px-4 py-3 p-[10px] flex flex-col gap-[20px] overflow-x-hidden  dark:bg-black bg-white border-b-[2px] dark:border-white">
+
+    <section className=" md:px-4 py-3 md:py-0 md:p-[10px] flex flex-col gap-[10px] overflow-x-hidden
+      dark:bg-black bg-white border-b-[2px] dark:border-white">
       {/* Heading */}
-      <div className="border-l-[4px] rounded-sm border-red-700 px-3">
+      <div className="border-l-[4px] rounded-sm border-red-700 px-3  ">
         <h1 className=" font-bold text-4xl  text-black dark:text-white font-libre">
           Latest tv series
         </h1>
       </div>
 
-      <div className="  max-w-[1400px] py-4 w-[99%] md:pl-3  gap-2">
+      <div className="  max-w-[1400px] py-4 w-[99%] md:pl-3  md:mt-[3rem] gap-2">
         <Slider {...settings}>
           {tv.map((t) => (
             <div key={t.id} className="">

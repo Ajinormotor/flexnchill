@@ -26,7 +26,7 @@ const Hero = () => {
   const { movies } = useGetMovie();
 
   return (
-    <section className="flex h-screen flex-col overflow-x-hidden">
+    <section className="flex h-screen flex-col overflow-x-hidden border-[2px]">
       <motion.div
         initial="hidden"
         animate="visible"
